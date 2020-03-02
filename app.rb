@@ -12,3 +12,7 @@ end
 get '/cat' do
   erb(:index)
 end
+
+get '/dog' do
+  erb
+end
