@@ -15,6 +15,7 @@ get '/random-scrat' do
 end
 
 get '/named-scrat' do
+  p params
   @caption = params[:caption]
   erb(:index)
 end
