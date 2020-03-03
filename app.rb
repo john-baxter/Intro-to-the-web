@@ -14,7 +14,7 @@ get '/random-scrat' do
   erb(:index)
 end
 
-get '/named-scrat' do
+post '/named-scrat' do
   p params
   @caption = params[:caption]
   erb(:index)
@@ -22,4 +22,8 @@ end
 
 get '/dog' do
   erb
+end
+
+get '/scrat-form' do
+  erb(:justform)
 end
