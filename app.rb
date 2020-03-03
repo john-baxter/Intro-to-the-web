@@ -9,7 +9,13 @@ get '/secret' do
   "message of my choosing"
 end
 
-get '/cat' do
+get '/random-scrat' do
+  @caption = ["found", "stole", "definitely did not make myself"].sample
+  erb(:index)
+end
+
+get '/named-scrat' do
+  @caption = params[:caption]
   erb(:index)
 end
 
